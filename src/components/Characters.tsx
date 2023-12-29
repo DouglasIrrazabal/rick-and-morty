@@ -1,6 +1,7 @@
 import { Character } from "@/entities/character";
 import { fetchAllCharacters } from "../usecases/fetchCharacters";
 import { useEffect, useState } from "react";
+import { Bento } from "./Bento";
 
 
 export const Characters = () => {
@@ -17,13 +18,11 @@ export const Characters = () => {
 		
   }, []);
 
-
   return (
-    <>
-      <h1 className="text-white">Works!!!</h1>
-      {characters.map((character) => (
-        <p key={character.id} className="text-white">{character.name}</p>
+    <div className="w-5/6 md:w-2/3 mx-auto pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+      {characters.map(({name, image}) => (
+        <Bento name={name} image={image}/>
       ))}
-    </>
+    </div>
   )
 }
