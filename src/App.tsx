@@ -2,6 +2,8 @@ import './App.css';
 import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Characters } from './pages/Characters';
+import { Locations } from './pages/Locations';
+import { Episodes } from './pages/Episodes';
 
 
 function App() {
@@ -20,6 +22,14 @@ function App() {
         <Route
           path='/characters'
           element={<Characters />}
+        />
+        <Route
+          path='/locations'
+          element={<Locations />}
+        />
+        <Route
+          path='/episodes'
+          element={<Episodes />}
         />
       </Routes>
     </Router>
