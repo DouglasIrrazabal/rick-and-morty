@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
-    <header className="w-2/3 mx-auto bg-black py-4 rounded-full mt-3">
+    <header className="w-2/3 mx-auto py-4 rounded-full mt-3 bg-neutral-900">
       <nav className='container mx-auto px-8 flex items-center justify-between'>
         <p className="font-bold text-xl text-white">
           Rick and Morty
