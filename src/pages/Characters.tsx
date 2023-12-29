@@ -16,9 +16,14 @@ export const Characters = () => {
     fetchData();
 		
   }, []);
+
+
   return (
     <>
-    {console.log(characters)}
+      <h1 className="text-white">Works!!!</h1>
+      {characters.map((character) => (
+        <p key={character.id} className="text-white">{character.name}</p>
+      ))}
     </>
   )
 }
