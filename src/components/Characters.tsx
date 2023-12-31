@@ -19,7 +19,7 @@ export const Characters = () => {
   }, []);
 
   return (
-    <div className="w-5/6 md:w-2/3 mx-auto pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div className="w-5/6 md:w-2/3 mx-auto pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
       {characters.map((data: Character) => (
         <Bento {...data}/>
       ))}
