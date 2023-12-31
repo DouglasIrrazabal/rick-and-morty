@@ -6,5 +6,5 @@ This frontend is gonna blow your mind harder than a trip to Anatomy Park, but wi
 - It presents that data in a way that even Jerry could understand (well, maybe not Jerry).
 - It's got more features than a Meseeks box, including filtering, sorting, and enough responsive design to make it work on any intergalactic device.
 
-## How to use it:
-Just click this portal link, Morty: https://douglasirrazabal.github.io/rick-and-morty
+## How to use it
+Just click this [portal link](https://douglasirrazabal.github.io/rick-and-morty), Morty.
