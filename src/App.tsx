@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path='/'
+          path='/rick-and-morty'
           element={<Characters />}
         />
         <Route
