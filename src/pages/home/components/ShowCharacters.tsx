@@ -1,10 +1,10 @@
 import { Character } from "@/entities/character";
-import { fetchAllCharacters } from "../usecases/fetchCharacters";
+import { fetchAllCharacters } from "../../../usecases/fetchCharacters";
 import { useEffect, useState } from "react";
-import { Bento } from "./Bento";
+import { CharacterBento } from "./CharacterBento";
 
 
-export const Characters = () => {
+export const ShowCharacters = () => {
 
   const [characters, setCharacters] = useState<Character[]>([]);
 
@@ -21,7 +21,7 @@ export const Characters = () => {
   return (
     <div className="w-5/6 md:w-2/3 mx-auto pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
       {characters.map((data: Character) => (
-        <Bento {...data}/>
+        <CharacterBento {...data}/>
       ))}
     </div>
   )
