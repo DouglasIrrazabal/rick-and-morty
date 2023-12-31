@@ -1,8 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import './App.css';
 import { Navbar } from './components/Navbar';
-import { Characters } from './components/Characters';
-import { NotFound } from './components/NotFound';
+import { Home } from './pages/home/Home';
+import { NotFound } from './pages/not-found/NotFound';
 
 
 function App() {
@@ -11,8 +10,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path='/rick-and-morty'
-          element={<Characters />}
+          path='/rick-and-morty/'
+          element={<Home />}
         />
         <Route
           path="*"
