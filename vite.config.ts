@@ -5,7 +5,7 @@ import tailwindcss from "tailwindcss"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://douglasirrazabal.github.io/',
+  base: 'https://douglasirrazabal.github.io/rick-and-morty',
   css: {
     postcss: {
       plugins: [tailwindcss()],
