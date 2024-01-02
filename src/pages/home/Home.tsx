@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { CharacterList } from './components/CharacterList';
 import { CharacterSearch } from './components/CharacterSearch';
 import { useCharacters } from './hooks/useCharacters';
-import { CharacterList } from './components/CharacterList';
+import { useDebounce } from './hooks/useDebounce';
 
 export const Home = () => {
   const [searchText, setSearchText] = useState('');
-  const {data, error, isLoading} = useCharacters(searchText);
+  const debouncedSearchInput = useDebounce(searchText, 400);
+  const {data, error, isLoading} = useCharacters(debouncedSearchInput);
 
   return (
     <div className='w-5/6 md:w-2/3 mx-auto'>
